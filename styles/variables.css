@@ -1,1 +1,22 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+    --main-font: 'Inter-Variable';
+    --accent-font: 'Press Start 2P';
+    --card-text-weight: 400;    /* толщина основного текста карточки */
+    --card-header-weight: 700;  /* толщина заголовка карточки */
+
+    --page-bg: repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
+               repeating-linear-gradient(#d3d3d3 0 2px, transparent 2px 4px),
+               linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+    --accent-color: #000;
+    --background-color: #fff;
+    --text-stroke-color: rgb(255 255 255 / 0.3);
+    --button-text-color: var(--background-color, #fff);
+    --sparks-color: #f00;
+    /* --section-width: clamp(23.4375rem, 16.3477rem + 30.1692vw, 43.5rem); */
+    --section-width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
+    --header-padding-top: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);   /* from 120px (at 375) to 136px (at 1440px)  */
+    --header-logo-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem); /* from 49px (at 375) to 65px (at 1440) */
+    --header-title-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem); /* from 14px (at 375) to 23px (at 1440) */
+}

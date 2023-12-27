@@ -1,46 +1,270 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml">
+    <link rel="icon" type="image/png" sizes="32x32" href="./image/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./image/favicon-16x16.png">    
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png">
     <title>Закрывающий тег</title>
-    <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
-    <link rel="stylesheet" href="./styles/globals.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/animations.css" />
-    <link rel="stylesheet" href="./styles/themes.css" />
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./styles/variables.css">
+    <link rel="stylesheet" href="./styles/globals.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/animations.css">
+    <link rel="stylesheet" href="./styles/themes.css">
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
-    <header class="header">
+    <header class="header section">
+      <h1 class="header__logo">&lt;/HTML&gt;</h1>
+      <h2 class="header__title">закрывающий тег</h2>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
           <li class="theme-menu__item">
-            <button type="button" data-theme="dark" class="theme-menu__button">
-              Темно
-            </button>
+            <button type="button" data-theme="dark" class="theme-menu__button">Темно</button>
           </li>
           <li class="theme-menu__item">
-            <button
-              type="button"
-              data-theme="auto"
-              disabled
-              class="theme-menu__button"
-            >
-              Авто
-            </button>
+            <button type="button" data-theme="auto" disabled class="theme-menu__button">Авто</button>
           </li>
           <li class="theme-menu__item">
-            <button type="button" data-theme="light" class="theme-menu__button">
-              Светло
-            </button>
+            <button type="button" data-theme="light" class="theme-menu__button">Светло</button>
           </li>
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main class="main">
+      <article class="card section">
+        <h2 class="card__title">Фритрек и&nbsp;нулевой спринт: Подготовка к&nbsp;работе</h2>
+        <div class="card__picture">
+          <img class="card__image filter-combine" src="./images/pic01.jpg" alt="Решимость" loading="lazy">
+          <span class="card__label">Решимость</span>
+        </div>
+        <div class="card__description">
+          <p>Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.</p>
+          <p>Была уверенность, что в этом увлекательном путешествии знаний будут получены не только теоретические основы, но и ценные практические 
+            навыки, которые станут надежным фундаментом для будущего успеха.</p>
+        </div>
+        <div class="card__controls">
+          <button class="card__icon-button">
+            <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="39" height="36" viewBox="0 0 39 36" fill="none">
+              <g class="heart">
+                <path class="contour" fill="var(--accent-color)" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"/>
+                <path class="main-body" fill="none" d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"/>
+                <path class="core" fill="none" d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"/>
+              </g>
+              <path class="sparks" fill="var(--sparks-color)" d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"/>
+            </svg>
+          </button>
+          <button type="button" class="button card__like-button"><span class="button__text">Like</span></button>
+        </div>
+      </article>
+
+      <article class="card section">
+        <h2 class="card__title">1&nbsp;спринт: Я&nbsp;&mdash; чистый лист</h2>
+        <div class="card__picture">
+          <img class="card__image filter-blur" src="./images/pic02.jpg" alt="Сомнения" loading="lazy">
+          <span class="card__label">Сомнения</span>
+        </div>
+        <div class="card__description">
+          <p>На первых этапах мы работали со страхами и сомнениями, которые часто испытывают новички. Один из них — страх перед чистым листом. Это, конечно же, намного сложнее, чем боязнь куска бумаги. Часто за этим ощущением скрываются более глубокие вопросы: с чего начать? а вдруг будет слишком сложно? что, если я не справлюсь?</p>
+          <p>Но с каждым преодоленным моментом неуверенности приходило осознание, что чистый лист — это не пустота, а полотно для творчества. Страхи постепенно уступали место вдохновению, а сомнения превращались в возможности для роста и развития. Таким образом, каждое преодоление страха перед неизведанным становилось шагом к раскрытию собственного потенциала.</p>
+        </div>
+        <div class="card__controls">
+          <button class="card__icon-button">
+            <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="39" height="36" viewBox="0 0 39 36" fill="none">
+              <g class="heart">
+                <path class="contour" fill="var(--accent-color)" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"/>
+                <path class="main-body" fill="none" d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"/>
+                <path class="core" fill="none" d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"/>
+              </g>
+              <path class="sparks" fill="var(--sparks-color)" d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"/>
+            </svg>
+          </button>
+          <button type="button" class="button card__like-button"><span class="button__text">Like</span></button>
+        </div>
+      </article>
+
+      <article class="card section">
+        <h2 class="card__title">1&nbsp;спринт: А&nbsp;если не&nbsp;получится?</h2>
+        <div class="card__picture">
+          <img class="card__image filter-grayscale" src="./images/pic03.jpg" alt="Эмоции" loading="lazy">
+          <span class="card__label">Эмоции</span>
+        </div>
+        <div class="card__description">
+          <p>Первый проект — позади! Но это всё ещё самое начало пути. Радость могла быстро померкнуть и смениться ожиданием провала. Или вы, наоборот, могли вдохновиться успехами и поверить в себя.</p>
+          <p>Каждый завершенный проект, будь то первый или следующий в цепочке достижений, открывает новые горизонты возможностей. 
+            Это момент для осмысления достигнутых результатов. Каждый этап приносит ценный опыт и придаёт уверенности в будущем.</p>
+        </div>
+        <div class="card__controls">
+          <button class="card__icon-button">
+            <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="39" height="36" viewBox="0 0 39 36" fill="none">
+              <g class="heart">
+                <path class="contour" fill="var(--accent-color)" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"/>
+                <path class="main-body" fill="none" d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"/>
+                <path class="core" fill="none" d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"/>
+              </g>
+              <path class="sparks" fill="var(--sparks-color)" d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"/>
+            </svg>
+          </button>
+          <button type="button" class="button card__like-button"><span class="button__text">Like</span></button>
+        </div>
+      </article>
+
+      <article class="card section">
+        <h2 class="card__title">2&nbsp;спринт: Погоня за&nbsp;идеалом</h2>
+        <div class="card__picture">
+          <img class="card__image filter-contrast" src="./images/pic04.jpg" alt="Идеал" loading="lazy">
+          <span class="card__label">Идеал</span>
+        </div>
+        <div class="card__description">
+          <p>На этом этапе вы уже достаточно разбирались в основах вёрстки, чтобы понять, как много ещё впереди. Вы могли попытаться погнаться за идеалом и понять, что он недостижим. А, может, вы вовсе и не подвержены перфекционизму и вместо того, чтобы сделать идеально, старались просто сделать.</p>
+          <p>И тут приходит осознание, что идеал часто является двигателем прогресса, но не обязательно конечной целью. 
+            Постоянное стремление к совершенству может быть вдохновляющим вызовом, но важно помнить, что и в неидеальности есть своя красота. 
+            Подход, сфокусированный на действии, позволяет не только достигать результатов, но и наслаждаться процессом творчества, 
+            принимая каждую ошибку как шаг к новым открытиям и улучшениям.</p>
+        </div>
+        <div class="card__controls">
+          <button class="card__icon-button">
+            <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="39" height="36" viewBox="0 0 39 36" fill="none">
+              <g class="heart">
+                <path class="contour" fill="var(--accent-color)" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"/>
+                <path class="main-body" fill="none" d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"/>
+                <path class="core" fill="none" d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"/>
+              </g>
+              <path class="sparks" fill="var(--sparks-color)" d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"/>
+            </svg>
+          </button>
+          <button type="button" class="button card__like-button"><span class="button__text">Like</span></button>
+        </div>
+      </article>
+
+      <article class="card section">
+        <h2 class="card__title">2&nbsp;спринт: О&nbsp;тех, кто рядом</h2>
+        <div class="card__picture">
+          <img class="card__image filter-sepia" src="./images/pic05.jpg" alt="Поддержка" loading="lazy">
+          <span class="card__label">Поддержка</span>
+        </div>
+        <div class="card__description">
+          <p>Всё это время вы были не одиноки (хотя, возможно, иногда и чувствовали, что одни против целого мира). Вас окружали одногруппники, команда сопровождения и просто близкие люди, которым можно пожаловаться, если очередной макет просто так не поддавался. Осваивать что-то новое легче, когда рядом есть единомышленники, не правда ли?</p>
+          <p>Сообщество, поддержка и взаимопонимание играют огромную роль в пути к новым навыкам. Вместе вы переживали трудности, делились идеями и находили креативные решения. Это как коллективный запас мудрости, который помогает преодолевать трудности и делает каждый шаг более увлекательным. Ведь в конечном итоге, успех становится не только индивидуальным достижением, но и победой всей команды, где каждый внес свой вклад в общий успех.</p>
+        </div>
+        <div class="card__controls">
+          <button class="card__icon-button">
+            <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="39" height="36" viewBox="0 0 39 36" fill="none">
+              <g class="heart">
+                <path class="contour" fill="var(--accent-color)" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"/>
+                <path class="main-body" fill="none" d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"/>
+                <path class="core" fill="none" d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"/>
+              </g>
+              <path class="sparks" fill="var(--sparks-color)" d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"/>
+            </svg>
+          </button>
+          <button type="button" class="button card__like-button"><span class="button__text">Like</span></button>
+        </div>
+      </article>
+
+      <article class="card section">
+        <h2 class="card__title">3&nbsp;спринт: Обходные стратегии</h2>
+        <div class="card__picture">
+          <img class="card__image filter-invert" src="./images/pic06.jpg" alt="Под другим углом" loading="lazy">
+          <span class="card__label">Под другим углом</span>
+        </div>
+        <div class="card__description">
+          <p>На этом курсе вы постоянно решали разные задачи. В какой-то момент вам могло показаться, что решения просто иссякли. Значит, пришло время посмотреть на задачу под другим углом.</p>
+          <p>Иногда, когда кажется, что идей больше нет, это всего лишь сигнал к тому, чтобы разнообразить свой взгляд. 
+            Иногда именно в изменении перспективы заключаются ключевые решения, которые приводят к новым и интересным результатам.
+            Так что даже в трудных моментах нужно помнить, что смена угла зрения — это не ступор, а возможность для творческого преобразования.</p>
+        </div>
+        <div class="card__controls">
+          <button class="card__icon-button">
+            <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="39" height="36" viewBox="0 0 39 36" fill="none">
+              <g class="heart">
+                <path class="contour" fill="var(--accent-color)" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"/>
+                <path class="main-body" fill="none" d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"/>
+                <path class="core" fill="none" d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"/>
+              </g>
+              <path class="sparks" fill="var(--sparks-color)" d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"/>
+            </svg>
+          </button>
+          <button type="button" class="button card__like-button"><span class="button__text">Like</span></button>
+        </div>
+      </article>
+
+      <article class="card section">
+        <h2 class="card__title">3&nbsp;спринт: Когда опускаются руки</h2>
+        <div class="card__picture">
+          <img class="card__image filter-saturate" src="./images/pic07.jpg" alt="Концентрация" loading="lazy">
+          <span class="card__label">Концентрация</span>
+        </div>
+        <div class="card__description">
+          <p>Во время учёбы часто возникает чувство, когда не знаешь, за что хвататься. Вроде и проектную пора сдавать, и задачи хочется порешать, и в теории получше разобраться, и жизнь не забыть пожить. В такие моменты очень нужна концентрация. Вспомните, откуда вы её черпали.</p>
+          <p>Концентрация — тот волшебный ингредиент, который помогает многозадачно справляться с потоком обязанностей.
+            Черпать её можно из вдохновляющих бесед с наставниками, из поддержки друзей или даже из тихих моментов саморефлексии.
+            Когда мир вокруг кажется слишком многообразным, важно сосредоточиться, чтобы вновь обрести ясность в своих 
+            целях и задачах. Концентрация — это не только ключ к успешной учёбе, но и путеводная звезда в мире многозадачности и творчества.</p>
+        </div>
+        <div class="card__controls">
+          <button class="card__icon-button">
+            <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="39" height="36" viewBox="0 0 39 36" fill="none">
+              <g class="heart">
+                <path class="contour" fill="var(--accent-color)" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"/>
+                <path class="main-body" fill="none" d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"/>
+                <path class="core" fill="none" d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"/>
+              </g>
+              <path class="sparks" fill="var(--sparks-color)" d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"/>
+            </svg>
+          </button>
+          <button type="button" class="button card__like-button"><span class="button__text">Like</span></button>
+        </div>
+      </article>
+
+      <article class="card section">
+        <h2 class="card__title">&laquo;Сейчас я&nbsp;здесь&raquo;</h2>
+        <div class="card__picture">
+          <img class="card__image filter-hue" src="./images/pic08.jpg" alt="Совершенствование" loading="lazy">
+          <span class="card__label">Совершенствование</span>
+        </div>
+        <div class="card__description">
+          <p>Сейчас вы уже очень много знаете о вёрстке. Но это только начало. Во-первых, впереди ещё много материала про «красотищу». Во-вторых, с окончанием курса учёба не заканчивается. Вёрстка — это целый мир. И этот мир постоянно меняется. Познать его полностью не получится, но это тот случай, когда важен сам процесс познания. Ведь часто путь — и есть результат.</p>
+          <p>В мире вёрстки всегда найдется что-то новое для изучения и освоения. Каждое обновление, каждая новая технология — это возможность 
+            расширить свои знания и навыки. Здесь важно не столько пытаться охватить все аспекты, сколько наслаждаться самим путешествием 
+            в этот бескрайний мир творчества. Ведь именно в процессе обучения и поиска открываются неизведанные горизонты и 
+            совершенствуется мастерство. Нужно держать руку на пульсе перемен и быть открытым к новым знаниям.</p>
+        </div>
+        <div class="card__controls">
+          <button class="card__icon-button">
+            <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="39" height="36" viewBox="0 0 39 36" fill="none">
+              <g class="heart">
+                <path class="contour" fill="var(--accent-color)" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"/>
+                <path class="main-body" fill="none" d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"/>
+                <path class="core" fill="none" d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"/>
+              </g>
+              <path class="sparks" fill="var(--sparks-color)" d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"/>
+            </svg>
+          </button>
+          <button type="button" class="button card__like-button"><span class="button__text">Like</span></button>
+        </div>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <button type="button" class="button button_save-button" onclick="window['dialog-save'].showModal();" aria-controls="dialog-save">
+        <svg class="button__icon" viewBox="0 0 40 40"><use href="./svg/floppy.svg#floppy"/></svg>
+        <span class="button__text">Сохранить на память</span>
+      </button>
+    </footer>
+
+    <dialog id="dialog-save" class="dialog">
+      <div class="dialog__content">
+        <svg class="dialog__icon" viewBox="0 0 40 40"><use href="./svg/floppy.svg#floppy"/></svg>
+        <p class="dialog__description">Вставьте дискету, чтобы продолжить</p>
+      </div>
+      <button type="button" class="button dialog__button" onclick="window['dialog-save'].close()"><span class="button__text">OK</span></button>
+    </dialog>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
