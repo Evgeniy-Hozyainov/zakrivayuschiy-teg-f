@@ -6,6 +6,8 @@
 */
 
 :root.theme-light {
+  --card-text-weight: 400;
+  --card-header-weight: 700;  
   --accent-color: #000;
   --background-color: #fff;
   --page-bg: repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
@@ -17,6 +19,8 @@
 
 @media (prefers-color-scheme: light) {
   :root {
+    --card-text-weight: 400;
+    --card-header-weight: 700;
     --accent-color: #000;
     --background-color: #fff;
     --page-bg: repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
@@ -28,6 +32,8 @@
 }
 
 :root.theme-dark {
+  --card-text-weight: 465;
+  --card-header-weight: 785;
   --accent-color: #00cc14;
   --background-color: #000;
   --page-bg: repeating-linear-gradient(90deg, #000 0 2px, transparent 2px 4px),
@@ -39,6 +45,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --card-text-weight: 465;
+    --card-header-weight: 785;
     --accent-color: #00cc14;
     --background-color: #000;
     --page-bg: repeating-linear-gradient(90deg, #000 0 2px, transparent 2px 4px),
