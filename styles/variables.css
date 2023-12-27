@@ -14,6 +14,7 @@
     --text-stroke-color: rgb(255 255 255 / 0.3);
     --button-text-color: var(--background-color, #fff);
     --sparks-color: #f00;
+    --heart-color: #f00;
     --section-width: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
     --header-padding-top: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);   /* from 120px (at 375) to 136px (at 1440px)  */
     --header-logo-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem); /* from 49px (at 375) to 65px (at 1440) */
